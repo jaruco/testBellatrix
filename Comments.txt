@@ -1,0 +1,14 @@
+- There are too many parameter in the 'logMessage' method
+- This piece of code < messageText.trim() > needs to be assign to a variable to can be applied
+- < messageText.length() == 0 > could be replaced with proper String's method: messageText.isEmpty();
+- instead of return you could throw an exception of empty message
+  < return; >
+- Validations need to be in a separated method
+- Connection to a database need to be managed in a separated method
+- The connection to the database is made even if you're not going to use it.
+- In < getConnectionMethod > is needed to specify the schema
+- PreparedStatement has better performance and is editable at runtime
+- The handlers of File and Console, aren't never closed
+- Could be need to add a formatter to modify the output from XML by default to text
+- By default the Logger class add all the data about the date, time, name of the class and method
+- The connection to the database is never closed
